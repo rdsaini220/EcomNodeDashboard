@@ -1,0 +1,139 @@
+//=========== Layout componets style ===========
+.wrapper {
+    width   : 100%;
+    position: relative;
+    .content-wrapper {
+        position   : relative;
+        margin-left: $space-250;
+        width      : calc(100% - $space-250);
+        background: $color-light;
+        @media (max-width: 768px) {
+            margin-left:0;
+            width: 100%;
+        }
+    }
+}
+
+//=========== Header componets style ===========
+.header-sec{
+    box-shadow: $shadow-primary;
+    background: #f7f8fb;
+    max-height: $space-72;
+    .h-72{
+        height: $space-72;
+    }
+    .nav-link{
+        font-size   : 1rem;
+        font-weight : $fw-500;
+        color       : $color-secondary !important;
+        &.text-danger{
+            color: $color-red !important;
+        }
+        &:not(.text-danger, .active):hover {
+            color: $color-primary !important;
+        }
+    }
+    .dropdown-btn{
+        background: none !important;
+        border: none;
+        outline: none;
+        @media (max-width: 768px) {
+            &::after{
+                display: none;
+            }
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .dropdown-menu{
+        left: auto;
+        right: 0;
+        padding   : 10px;
+        box-shadow: $shadow-secondary;
+        border    : none;
+        min-width: 220px;
+    }
+   @media (max-width: 768px) {
+    .m-navbar{ 
+        width: auto !important;
+    }
+   }
+}
+
+
+//=========== Sidebar componets style ===========
+.main-sidebar {
+    width: $space-250;
+    background: $color-white;
+    bottom  : 0;
+    float   : none;
+    left    : 0;
+    position: fixed;
+    top     : 0;
+    border-right:none;
+    .btn-close{
+        display: none;
+    }
+    @media (max-width: 768px) {
+        &:not(.show)
+        {
+            left: -$space-250;
+        }
+        .btn-close {
+            display: block;
+        }
+    }
+}
+
+.nav-link {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    cursor         : pointer;
+    font-size      : 1rem;
+    font-weight    : $fw-500;
+    color          : $color-secondary;
+    border-radius  : $radius-s;
+    padding-top    : $space-12;
+    padding-bottom : $space-12;
+    &.active {
+        background: $color-primary;
+        color     : $color-white !important;
+    }
+    .nav-icon i {
+        margin-right: $space-8;
+    }
+    &:hover{
+      color : $color-primary;  
+    }
+}
+
+.user-img {
+    display      : flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    background: $color-primary;
+    color: $color-white;
+    width        : $space-42;
+    height       : $space-42;
+    border-radius: $radius-full;
+    box-shadow: $shadow-secondary;
+}
+
+.navigation-bar{
+    .breadcrumb{
+        margin-bottom: 0;
+        .breadcrumb-item{
+            a{
+                color: $color-secondary;
+                font-weight: $fw-500;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

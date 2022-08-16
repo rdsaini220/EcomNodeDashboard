@@ -1,0 +1,100 @@
+//=========== base style ===========
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: $font-primary;
+    color      : $color-secondary;
+    font-size  : $space-16;
+    line-height: $space-24;
+    background : $color-light;
+    margin     : 0;
+    padding    : 0;
+    font-weight: normal;
+    overflow-x : hidden;
+}
+
+p {
+    margin-bottom : 0;
+}
+
+a {
+    text-decoration : none;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    font-weight  : $fw-600;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.375rem
+}
+h4{
+    font-size: 1.25rem;
+}
+h5{
+    font-size: 1.125rem;
+}
+h6{
+    font-size: 1;
+}
+
+ul{
+    padding-left: 0;
+}
+
+button {
+    outline: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: none !important;
+        outline   : none !important;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.text-primary{
+    color: $color-primary !important;
+}
+.text-secondary{
+    color:$color-secondary !important;
+}
+.text-danger{
+    color:$color-red !important;
+}
+.btn-none{
+    background: none;
+    outline: none;
+    border: none;
+}
+.btn{
+    height: $space-48;
+}
+.btn-primary{
+    background: $color-primary !important;
+    border-color: $color-primary !important;
+}
+.btn-danger{
+    background: $color-red !important;
+    border-color: $color-red !important;
+}
+
+.bg-light{
+    background: $color-light !important;
+}

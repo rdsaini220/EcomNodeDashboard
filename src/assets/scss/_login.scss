@@ -1,0 +1,19 @@
+.login-page-sec{
+   height: 100vh; 
+   overflow: hidden;
+   .login-widget{
+       width: 100%;
+       box-shadow: $shadow-secondary;
+       background: $color-white;
+       padding: 30px 50px;
+       border-radius: $radius-s;
+   }
+   .logo-login{
+       width: 48px;
+   }
+   .auth-info{
+        padding: 24px;
+        background: $color-light;
+        border-radius: $radius-s;
+   }
+}
